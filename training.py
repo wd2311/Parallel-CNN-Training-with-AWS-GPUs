@@ -177,9 +177,12 @@ C = categories                  # of categories
 #timeConstant = 20
 # I concluded that the amount of time you have to learn something affects the way you shhould learn it, this controls that
 # timeConstant has units "How many epochs should the first batch have"
-B = 1
-M = .1
-timeConstant = 3
+B = 20
+M = .02
+timeConstant = 50
+#B = 1
+#M = .1
+#timeConstant = 3
 
 #def SIC(percentOfStagesDone):  # "Stage Importance Weight"
 	#return 1
@@ -203,7 +206,7 @@ for stage in range(0, B):
 for stage in range(0, B):  # Batch Stage
     model = trainModel(model, E[stage], BS[stage], xTrain, yTrain)
 
-saveModel(model, '1')
+saveModel(model, 'fullestTrain')
 
 # Parameter passing has been edited****: 
 	# model = trainModel(model, 5, 60, x, y_train)
