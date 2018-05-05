@@ -40,7 +40,7 @@ x_test = np.array(x_test)
 y_answers = np.array(y_answers)
 
 
-modelID = '1'
+modelID = 'fullestTrain'
 print('Loading model...')
 filename = 'Model-' + modelID
 json_file = open("models/" + filename + ".json", 'r')
