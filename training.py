@@ -177,9 +177,9 @@ C = categories                  # of categories
 #timeConstant = 20
 # I concluded that the amount of time you have to learn something affects the way you shhould learn it, this controls that
 # timeConstant has units "How many epochs should the first batch have"
-B = 20
-M = .02
-timeConstant = 50
+B = 10
+M = .005
+timeConstant = 750
 #B = 1
 #M = .1
 #timeConstant = 3
