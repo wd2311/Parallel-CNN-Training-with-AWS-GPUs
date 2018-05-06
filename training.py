@@ -21,7 +21,6 @@ from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.models import model_from_json
 from keras.utils import np_utils
 from keras.preprocessing.image import img_to_array
-from PIL import Image
 from keras import backend as K
 import numpy as np
 import pandas as pd
